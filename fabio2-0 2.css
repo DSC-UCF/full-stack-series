@@ -1,0 +1,69 @@
+#btn-sign {
+  background-color: #2e8bc0;
+  color: #fff;
+  border-color: #fff;
+}
+
+#btn-sign:hover {
+}
+
+#centerTest {
+  color: black;
+  text-align: center;
+}
+
+#hero-sect {
+  width: 100%;
+  height: 30vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#hero-sect img {
+  width: 100%;
+}
+
+.callToAction {
+  position: absolute;
+  background-color: #2e8bc0;
+  color: #ffffff;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.callToAction:link {
+  text-decoration: none;
+}
+
+.callToAction:hover {
+  color: #ffffff;
+}
+
+#magnif {
+  background-color: #fff;
+  border-radius: 5px;
+  height: 25px;
+  padding-top: 5px;
+  padding-right: 5px;
+  margin-left: -50px;
+  float: none;
+  margin: 0px;
+}
+#centerTest {
+  background-color: #2e8bc0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#centerTest > input {
+  border-radius: 5px;
+  width: 33%;
+  margin-left: 0px;
+  border: 0px;
+  float: none;
+}

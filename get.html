@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- Font css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!--Icon library-->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <!--Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- title to tab -->
+    <title>Clean Water - Home</title>
+
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+	// ]]>
+    </script>
+</head>
+
+<body>
+
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark " id="nav-back">
+        <a class="navbar-brand" href="#">CleanWater</a>
+
+        <!-- this helps with mobile optimization by collapsing the navbar -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#navbarNav">Who We Are</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">What We Do</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#reviews">Get Involved</a>
+                </li>
+            </ul>
+        </div>
+        <div class="d-none d-lg-block">
+            <a href="./sign-up.html"><button id="btn-sign" class=" btn btn-outline-success mr-1" type="button">Sign
+                    Up</button></a>
+            <a href="./login.html"><button id="btn-sign" class="btn btn-outline-success ml-1"
+                    type="button">Login</button></a>
+        </div>
+    </nav>
+
+    <!-- main CTA after nav  -->
+    <div id="hero-sect" class="container-fluid d-flex">
+        <div class="row justify-content-center align-self-center mx-auto">
+            <div class="col-12">
+                <a href="./sign-up.html" class="callToAction">Join The Cause</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- search bar with icon -->
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12" id="centerTest">
+                <input class="searchBox" type="text" placeholder="Search for events in your area">
+                <button class="btn btn-info">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--event 1-->
+    <div class="container-fluid carderino px-1 " style="padding-top: 30px;">
+        <div class="row justify-content-center">
+            <div class="col-10 card mb-3">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="./pictures/rowpic1.JPG" class="card-img" alt="...">
+                    </div>
+                    <div class="col-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Daytona Coastal Cleanup</h5>
+                            <p class="card-text">January 25th, 2021 at 1:00 PM.</p>
+                            <p class="card-text">4000 Central Florida Blvd</p>
+                            <p class="card-text">Orlando, FL 32816</p>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <a href="#" class="btn btn-info">RSVP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--event 2-->
+    <div class="container-fluid carderino px-1 " style="padding-top: 30px;">
+        <div class="row justify-content-center">
+            <div class="col-10 card mb-3">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="./pictures/rowpic1.JPG" class="card-img" alt="...">
+                    </div>
+                    <div class="col-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Daytona Coastal Cleanup</h5>
+                            <p class="card-text">January 25th, 2021 at 1:00 PM.</p>
+                            <p class="card-text">4000 Central Florida Blvd</p>
+                            <p class="card-text">Orlando, FL 32816</p>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <a href="#" class="btn btn-info">RSVP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--event 3-->
+    <div class="container-fluid carderino px-1 " style="padding-top: 30px;">
+        <div class="row justify-content-center">
+            <div class="col-10 card mb-3">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="./pictures/rowpic1.JPG" class="card-img" alt="...">
+                    </div>
+                    <div class="col-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Daytona Coastal Cleanup</h5>
+                            <p class="card-text">January 25th, 2021 at 1:00 PM.</p>
+                            <p class="card-text">4000 Central Florida Blvd</p>
+                            <p class="card-text">Orlando, FL 32816</p>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <a href="#" class="btn btn-info">RSVP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--create event button-->
+    <div class="container-fluid" style="padding-top: 30px; padding-bottom: 30px;">
+        <div class="row justify-content-center">
+            <div>
+                <p>That's all for now!</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div>
+                <a href="#" class="btn btn-info">Create an Event</a>
+            </div>
+        </div>
+    </div>
+
+    <!--quote picture-->
+    <div class="container-fluid" style="padding-top: 30px;">
+        <div class="row justify-content-center">
+            <div>
+                <img src="./pictures/quote-pic.png" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="container-fluid footer" style="padding-top: 30px;">
+        <div class="row justify-content-center text-center">
+            <div class="col-12 col-md-3">
+                <p>Clean Water Co.</p>
+                <p>000-000-0000</p>
+                <p>dscucf@gmail.com</p>
+            </div>
+
+            <div class="col-12 col-md-3 text-center my-auto">
+                <i class="fab fa-instagram" style="font-size:36px;"></i>
+                <i class="fab fa-twitter" style="font-size:36px;"></i>
+                <i class="fab fa-facebook" style="font-size:36px;"></i>
+            </div>
+
+            <div class="col-12 col-md-3 text-right text-center my-auto">
+                <p>Copyright Clean Water Co.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--End of fluid container-->
+
+    <!-- Bootstrap imports -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
