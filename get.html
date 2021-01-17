@@ -27,53 +27,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
     <!-- title to tab -->
-    <title>Clean Water - Home</title>
-
-    <!-- Code injected by live-server -->
-    <script type="text/javascript">
-        // <![CDATA[  <-- For SVG support
-        if ('WebSocket' in window) {
-            (function () {
-                function refreshCSS() {
-                    var sheets = [].slice.call(document.getElementsByTagName("link"));
-                    var head = document.getElementsByTagName("head")[0];
-                    for (var i = 0; i < sheets.length; ++i) {
-                        var elem = sheets[i];
-                        var parent = elem.parentElement || head;
-                        parent.removeChild(elem);
-                        var rel = elem.rel;
-                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-                        }
-                        parent.appendChild(elem);
-                    }
-                }
-                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                var address = protocol + window.location.host + window.location.pathname + '/ws';
-                var socket = new WebSocket(address);
-                socket.onmessage = function (msg) {
-                    if (msg.data == 'reload') window.location.reload();
-                    else if (msg.data == 'refreshcss') refreshCSS();
-                };
-                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                    console.log('Live reload enabled.');
-                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                }
-            })();
-        }
-        else {
-            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-        }
-	// ]]>
-    </script>
+    <title>Clean Water - Get Involved</title>
 </head>
 
 <body>
 
     <!-- navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark " id="nav-back">
-        <a class="navbar-brand" href="#">CleanWater</a>
+        <a class="navbar-brand" href="index.html">CleanWater</a>
 
         <!-- this helps with mobile optimization by collapsing the navbar -->
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
@@ -84,13 +45,13 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#navbarNav">Who We Are</a>
+                    <a class="nav-link" href="who.html">Who We Are</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#services">What We Do</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#reviews">Get Involved</a>
+                    <a class="nav-link active" href="get.html">Get Involved</a>
                 </li>
             </ul>
         </div>
@@ -102,124 +63,81 @@
         </div>
     </nav>
 
-    <!-- main CTA after nav  -->
+    <!--Main picture-->
+    
     <div id="hero-sect" class="container-fluid d-flex">
         <div class="row justify-content-center align-self-center mx-auto">
             <div class="col-12">
-                <a href="./sign-up.html" class="callToAction">Join The Cause</a>
+                <button id="btn-sign" class=" btn btn-outline-success mr-1 btn-lg" type="button">Join The Cause</button></a>
             </div>
         </div>
     </div>
-
-
-    <!-- search bar with icon -->
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-12" id="centerTest">
-                <input class="searchBox" type="text" placeholder="Search for events in your area">
-                <button class="btn btn-info">
-                    <i class="fa fa-search"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <!--event 1-->
-    <div class="container-fluid carderino px-1 " style="padding-top: 30px;">
-        <div class="row justify-content-center">
-            <div class="col-10 card mb-3">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <img src="./pictures/rowpic1.JPG" class="card-img" alt="...">
-                    </div>
-                    <div class="col-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Daytona Coastal Cleanup</h5>
-                            <p class="card-text">January 25th, 2021 at 1:00 PM.</p>
-                            <p class="card-text">4000 Central Florida Blvd</p>
-                            <p class="card-text">Orlando, FL 32816</p>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <a href="#" class="btn btn-info">RSVP</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--event 2-->
-    <div class="container-fluid carderino px-1 " style="padding-top: 30px;">
-        <div class="row justify-content-center">
-            <div class="col-10 card mb-3">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <img src="./pictures/rowpic1.JPG" class="card-img" alt="...">
-                    </div>
-                    <div class="col-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Daytona Coastal Cleanup</h5>
-                            <p class="card-text">January 25th, 2021 at 1:00 PM.</p>
-                            <p class="card-text">4000 Central Florida Blvd</p>
-                            <p class="card-text">Orlando, FL 32816</p>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <a href="#" class="btn btn-info">RSVP</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--event 3-->
-    <div class="container-fluid carderino px-1 " style="padding-top: 30px;">
-        <div class="row justify-content-center">
-            <div class="col-10 card mb-3">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <img src="./pictures/rowpic1.JPG" class="card-img" alt="...">
-                    </div>
-                    <div class="col-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Daytona Coastal Cleanup</h5>
-                            <p class="card-text">January 25th, 2021 at 1:00 PM.</p>
-                            <p class="card-text">4000 Central Florida Blvd</p>
-                            <p class="card-text">Orlando, FL 32816</p>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <a href="#" class="btn btn-info">RSVP</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--create event button-->
-    <div class="container-fluid" style="padding-top: 30px; padding-bottom: 30px;">
-        <div class="row justify-content-center">
-            <div>
-                <p>That's all for now!</p>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div>
-                <a href="#" class="btn btn-info">Create an Event</a>
-            </div>
-        </div>
-    </div>
-
-    <!--quote picture-->
+    <br>
+    <br>
+    <!--left continer-->
     <div class="container-fluid" style="padding-top: 30px;">
-        <div class="row justify-content-center">
-            <div>
-                <img src="./pictures/quote-pic.png" class="img-fluid">
-            </div>
+        <div class="row justify-content-start">
+          <div class="col-4" style="background-color:#5885AF; color: whitesmoke;">
+           <h2>What Events You can Start.</h2> 
+          </div>
+          <div class="col-12" style="background-color:#145DA0;">
+            <table class="table table-borderless text-center" style="color: whitesmoke; ">
+                  <tbody>
+                  <tr>
+                    <td>Organized A Frundraising Event </td>
+                    <td>Spread Awareness</td>
+                    <td>Create A Club In Your Community</td>
+                  </tr>
+                  <tr>
+                    <td>Plan An Event</td>
+                    <td>Build A Well</td>
+                    <td>Create A Recruiting Event</td>
+                  </tr>
+                  <tr>
+                    <td>Beach Cleanup</td>
+                    <td>Ocean Cleanup</td>
+                    <td>Gt Lit At club</td>
+                  </tr>
+                </tbody>
+            </table>
+         </div>
         </div>
-    </div>
+      </div>
+    <br>
+    <br>
 
-    <!--footer-->
+     <!--left continer-->
+     <div class="container-fluid" style="padding-top: 30px;">
+        <div class="row justify-content-end">
+          <div class="col-6  align-self-end" style="background-color:#5885AF; color: whitesmoke;">
+            <h2>Heres is A Guide!</h2>
+          </div>
+          <div class="col-12" style="background-color:#145DA0;">
+            <table class="table table-borderless text-center" style="color: whitesmoke; ">
+                  <tbody>
+                  <tr>
+                    <td>Organized A Frundraising Event </td>
+                    <td>Spread Awareness</td>
+                    <td>Create A Club In Your Community</td>
+                  </tr>
+                  <tr>
+                    <td>Plan An Event</td>
+                    <td>Build A Well</td>
+                    <td>Create A Recruiting Event</td>
+                  </tr>
+                  <tr>
+                    <td>Beach Cleanup</td>
+                    <td>Ocean Cleanup</td>
+                    <td>Gt Lit At club</td>
+                  </tr>
+                </tbody>
+            </table>
+         </div>
+        </div>
+      </div>
+    <br>
+    <br>
+
     <div class="container-fluid footer" style="padding-top: 30px;">
         <div class="row justify-content-center text-center">
             <div class="col-12 col-md-3">

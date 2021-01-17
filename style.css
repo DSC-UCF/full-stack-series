@@ -1,6 +1,7 @@
 /*Body Font*/
 body{
     font-family: 'Roboto', sans-serif;
+    font-size: 20px;
 }
 
 /* text color for all hyperlink*/
@@ -8,14 +9,31 @@ a {
     color: white;
 }
 
+/* navigation Font -style  */
+
+.navbar-brand { 
+  font-family:'Pacifico' !important; 
+  font-size: 20px;
+}
+
 /* navigation styling */
 #nav-back{
     background-color: #145DA0 !important; 
 }
+
+/*login & signupbutton css*/
 #btn-sign {
   background-color: #2e8bc0;
   color: #fff;
   border: none;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/*Hover for login & signupbutton*/
+#btn-sign:hover {
+  background-color: whitesmoke;
+  color : #2E8BC0;
+  
 }
 
 /* for all footers */
@@ -95,4 +113,12 @@ a {
     linear-gradient(90deg, rgb(46,139,192),rgb(20,93,160));
     background-size: cover;
     background-position: center;
+}
+
+/*css for tables in get*/
+.borderless table {
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
 }
