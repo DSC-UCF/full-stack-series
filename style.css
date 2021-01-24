@@ -22,7 +22,7 @@ a {
 }
 
 /*login & signupbutton css*/
-#btn-sign {
+.btn{
   background-color: #2e8bc0;
   color: #fff;
   border: none;
@@ -30,11 +30,20 @@ a {
 }
 
 /*Hover for login & signupbutton*/
-#btn-sign:hover {
+.btn:hover {
   background-color: whitesmoke;
   color : #2E8BC0;
   
 }
+
+/*Event button css*/
+#eventbtn{
+  background-color: #75E6DA;
+  color: #fff;
+  border: none;
+  box-shadow: none;
+}
+
 
 /* for all footers */
 .footer{
@@ -106,14 +115,17 @@ a {
 }
 
 .signup{
-    background-image: radial-gradient(circle at 10% 26%, rgba(90, 90, 90,0.06) 0%, rgba(90, 90, 90,0.06) 25%,rgba(137, 137, 137,0.06) 25%, rgba(137, 137, 137,0.06) 50%,
-    rgba(185, 185, 185,0.06) 50%, rgba(185, 185, 185,0.06) 75%,rgba(232, 232, 232,0.06) 75%, rgba(232, 232, 232,0.06) 100%),
-    radial-gradient(circle at 46% 66%, rgba(171, 171, 171,0.06) 0%, rgba(171, 171, 171,0.06) 25%,rgba(128, 128, 128,0.06) 25%,
-    rgba(128, 128, 128,0.06) 50%,rgba(84, 84, 84,0.06) 50%, rgba(84, 84, 84,0.06) 75%,rgba(41, 41, 41,0.06) 75%, rgba(41, 41, 41,0.06) 100%),
-    linear-gradient(90deg, rgb(46,139,192),rgb(20,93,160));
-    background-size: cover;
-    background-position: center;
+  background-image: radial-gradient(circle at 10% 26%, rgba(90, 90, 90,0.06) 0%, rgba(90, 90, 90,0.06) 25%,rgba(137, 137, 137,0.06) 25%, rgba(137, 137, 137,0.06) 50%,
+  rgba(185, 185, 185,0.06) 50%, rgba(185, 185, 185,0.06) 75%,rgba(232, 232, 232,0.06) 75%, rgba(232, 232, 232,0.06) 100%),
+  radial-gradient(circle at 46% 66%, rgba(171, 171, 171,0.06) 0%, rgba(171, 171, 171,0.06) 25%,rgba(128, 128, 128,0.06) 25%,
+  rgba(128, 128, 128,0.06) 50%,rgba(84, 84, 84,0.06) 50%, rgba(84, 84, 84,0.06) 75%,rgba(41, 41, 41,0.06) 75%, rgba(41, 41, 41,0.06) 100%),
+  linear-gradient(90deg, rgb(46,139,192),rgb(20,93,160));
+  background-size: cover;
+  background-position: center;
 }
+
+
+
 
 /*css for tables in get*/
 .borderless table {
