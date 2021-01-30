@@ -1,0 +1,9 @@
+.navbar-brand { 
+    font-family:'Pacifico' !important; 
+    font-size: 20px;
+  }
+  
+  /* navigation styling */
+  #nav-back{
+      background-color: #145DA0 !important; 
+  }

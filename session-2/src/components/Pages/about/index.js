@@ -2,6 +2,8 @@ import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import Footer from '../../footer/foot';
 import NavBar from '../../navbar/nav';
+import Cards from './cards'
+
 export default function AboutPage() {
 
 
@@ -17,32 +19,12 @@ export default function AboutPage() {
             <Container>
                 <Row>
                     {/* cards for the more details */}
-                    <Col>
-                        <Card xs={6} style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
-                                </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
-                            </Card.Body>
-                        </Card>
+                    <Col xs={6}>
+                        <Cards title="uwu" descr="another uwu" />
                     </Col>
 
-                    <Col>
-                        <Card xs={6} style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
-                                </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
-                            </Card.Body>
-                        </Card>
+                    <Col xs={6}>
+                        <Cards title="uwu" descr="another uwu" />
                     </Col>
                 </Row>
             </Container>

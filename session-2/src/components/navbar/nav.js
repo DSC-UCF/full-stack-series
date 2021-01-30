@@ -1,10 +1,12 @@
 import React from 'react';
-import { Container, Row, Col, Nav } from 'react-bootstrap';
+import { Container, Row, Col, Nav, Button } from 'react-bootstrap';
+import './navBar.css'
+
 export default function NavBar() {
 
 
     return (
-        <Nav>
+        <Nav id="nav-back">
             <a className="navbar-brand" href="index.html">CleanWater</a>
 
             <button className="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
