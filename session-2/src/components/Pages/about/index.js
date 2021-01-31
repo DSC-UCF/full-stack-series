@@ -2,16 +2,17 @@ import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import Footer from '../../footer/foot';
 import NavBar from '../../navbar/nav';
-import Cards from './cards'
+import Cards from './cards';
+import whoMainPic from "../../../resources/pictures/whomainpic.jpg";
 
 export default function AboutPage() {
 
 
     return (
-        <Container>
+        <Container fluid style={{ padding: 0 }}>
             <NavBar />
-            <Container>
-                <Image src=""></Image>
+            <Container fluid>
+                <Image src={whoMainPic} width="100%"></Image>
             </Container>
             <Container>
 
