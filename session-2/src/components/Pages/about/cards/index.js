@@ -9,7 +9,7 @@ export default function descriptionCard(props) {
     const img = props.img;
 
     return (
-        <Card style={{ width: '18rem' }}>
+        <Card style={{ width: '100%', padding: '16px', margin: '16px' }}>
             <Card.Img variant="top" src={img} />
             <Card.Body>
                 <Card.Title>{title}</Card.Title>

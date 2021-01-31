@@ -1,7 +1,10 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import './footer.css'
+import './footer.css' // will only load the footer.css if the foot is rendered
+import { AiOutlineFacebook, AiOutlineInstagram, AiOutlineTwitter } from 'react-icons/ai'
+
 export default function Footer() {
+
     const iconFont = {
         fontSize: '36px'
     }
@@ -16,9 +19,9 @@ export default function Footer() {
                 </Col>
 
                 <Col md={3} xs={12} className="text-center my-auto">
-                    <i className="fab fa-instagram" style={iconFont}></i>
-                    <i className="fab fa-twitter" style={iconFont}></i>
-                    <i className="fab fa-facebook" style={iconFont}></i>
+                    <AiOutlineInstagram style={iconFont} />
+                    <AiOutlineTwitter style={iconFont} />
+                    <AiOutlineFacebook style={iconFont} />
                 </Col>
 
                 <Col md={3} xs={12} className="text-right text-center my-auto">

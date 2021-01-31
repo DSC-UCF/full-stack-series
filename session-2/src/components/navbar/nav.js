@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Nav, Button } from 'react-bootstrap';
 import './navBar.css'
-
+import { AiOutlineFacebook } from 'react-icons/ai'
 export default function NavBar() {
 
 
