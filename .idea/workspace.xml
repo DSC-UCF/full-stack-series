@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b979da5c-13ae-4f64-8928-d39deae24f0d" name="Default Changelist" comment="" />
+    <list default="true" id="b979da5c-13ae-4f64-8928-d39deae24f0d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +20,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Senior Design/medicineTracking" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -31,10 +33,18 @@
       <option name="presentableId" value="Default" />
       <updated>1612063477502</updated>
       <workItem from="1612063478554" duration="109000" />
+      <workItem from="1612156965625" duration="600000" />
+      <workItem from="1612192183478" duration="11000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1167" y="216" key="FileChooserDialogImpl" timestamp="1612192193252">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1167" y="216" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1612192193252" />
   </component>
 </project>

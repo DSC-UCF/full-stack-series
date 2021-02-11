@@ -6,7 +6,7 @@ body{
 }
 
 /* text color for all hyperlink*/
-a {
+.a {
   color: white;
 }
 
@@ -38,7 +38,7 @@ color : #2E8BC0;
 }
 
 /*Event button css*/
-#eventbtn{
+.eventbtn{
 background-color: #75E6DA;
 color: #fff;
 border: none;
@@ -109,12 +109,13 @@ padding: 8px;
 border: 0px;
 float: none;
 }
+
 #centerTest > button {
 padding-top:4px;
 padding-bottom: 4px;
 
 }
-
+/* background design for sign up page*/
 .signup{
 background-image: radial-gradient(circle at 10% 26%, rgba(90, 90, 90,0.06) 0%, rgba(90, 90, 90,0.06) 25%,rgba(137, 137, 137,0.06) 25%, rgba(137, 137, 137,0.06) 50%,
 rgba(185, 185, 185,0.06) 50%, rgba(185, 185, 185,0.06) 75%,rgba(232, 232, 232,0.06) 75%, rgba(232, 232, 232,0.06) 100%),

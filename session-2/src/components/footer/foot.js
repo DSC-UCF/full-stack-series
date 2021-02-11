@@ -5,6 +5,7 @@ import { AiOutlineFacebook, AiOutlineInstagram, AiOutlineTwitter } from 'react-i
 
 export default function Footer() {
 
+    // to have icon'sasd
     const iconFont = {
         fontSize: '36px'
     }

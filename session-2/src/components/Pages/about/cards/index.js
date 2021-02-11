@@ -2,22 +2,35 @@ import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 
 
-export default function descriptionCard(props) {
+export default class descriptionCard extends React.Component {
 
-    const title = props.title;
-    const descrip = props.descr;
-    const img = props.img;
+    constructor(props) {
+        super(props);
 
-    return (
-        <Card style={{ width: '100%', padding: '16px', margin: '16px' }}>
-            <Card.Img variant="top" src={img} />
-            <Card.Body>
-                <Card.Title>{title}</Card.Title>
-                <Card.Text>
-                    {descrip}
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-        </Card>
-    );
+    }
+
+
+    // needed to render the component and only method needed for React Class Components
+    render() {
+
+        const title = this.props.title;
+        const descrip = this.props.descr;
+        const img = this.props.img;
+        const btnMsg = this.props.btnMsg;
+
+        return (
+            // 
+            <Card className="eventHolder" style={{ width: '100%', padding: '16px', margin: '16px' }}>
+                <Card.Img variant="top" src={img} />
+                <Card.Body>
+                    <Card.Title>{title}</Card.Title>
+                    <Card.Text className="centerText">
+                        {descrip}
+                        {/*  */}
+                    </Card.Text>
+                    <Button variant="primary" className="infoButton" >{btnMsg}</Button>
+                </Card.Body>
+            </Card >
+        );
+    }
 }

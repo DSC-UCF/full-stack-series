@@ -6,7 +6,7 @@ export default function NavBar() {
 
 
     return (
-        <Container fluid style={{ style: 0 }}>
+        <Container fluid style={{ padding: 0, margin: 0 }}>
             <Nav id="nav-back" className="navbar-expand-lg">
                 <a className="navbar-brand" href="index.html">CleanWater</a>
 
@@ -15,9 +15,9 @@ export default function NavBar() {
                     <span className="navbar-toggler-icon"></span>
                 </button>
 
-                <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <div className="collapse navbar-collapse justify-content-center">
                     <Nav.Item>
-                        <Nav.Link href="">Who We Are</Nav.Link>
+                        <Nav.Link className="a" href="">Who We Are</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link href="">What We Do</Nav.Link>
@@ -28,8 +28,8 @@ export default function NavBar() {
                 </div>
 
                 <div className="d-none d-lg-block">
-                    <Button href="" >Sign up</Button>
-                    <Button href="" >Log in</Button>
+                    <Button className="btn mr-1" href="" >Sign up</Button>
+                    <Button className="btn ml-1" href="" >Log in</Button>
                 </div>
             </Nav>
         </Container>
