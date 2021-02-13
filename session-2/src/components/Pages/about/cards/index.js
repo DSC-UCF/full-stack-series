@@ -13,10 +13,12 @@ export default class descriptionCard extends React.Component {
     // needed to render the component and only method needed for React Class Components
     render() {
 
-        const title = this.props.title;
-        const descrip = this.props.descr;
-        const img = this.props.img;
-        const btnMsg = this.props.btnMsg;
+        // const title = this.props.title;
+        // const descrip = this.props.descr;
+        // const img = this.props.img;
+        // const btnMsg = this.props.btnMsg;
+
+        const { title, descr, img, btnMsg } = this.props;
 
         return (
             // 
@@ -25,7 +27,7 @@ export default class descriptionCard extends React.Component {
                 <Card.Body>
                     <Card.Title>{title}</Card.Title>
                     <Card.Text className="centerText">
-                        {descrip}
+                        {descr}
                         {/*  */}
                     </Card.Text>
                     <Button variant="primary" className="infoButton" >{btnMsg}</Button>
