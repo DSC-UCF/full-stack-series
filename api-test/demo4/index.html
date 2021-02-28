@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        function hello() {
+            //
+            $.getJSON("https://jsonplaceholder.typicode.com/posts/", function (json) {
+                $('#jsonTable').css("visibility", "visible").css("border", "1px solid green");
+                $('#jsonTable').append("<tbody>");
+                for (var counter = 0; counter < json.length; counter++) {
+                    $('#jsonTable').append("<tr><td>" + json[counter].id + "</td><td>" + json[counter].userId + "</td><td>" + json[counter].title + "</td><td>" + json[counter].body + "</td></tr>");
+                }
+                $('#jsonTable').append("</tbody>");
+                $('th').css("border", "1px solid green");
+            });
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <input type="button" value="Render JSON" id="Render JSON" onclick="return hello();" />
+    <br />
+    <table id="jsonTable" style="visibility:hidden">
+        <thead>
+            <tr>
+                <!-- The JSON downloaded from the URL above provides four attributes.-->
+                <th>id</th>
+                <th>userId</th>
+                <th>title</th>
+                <th>body</th>
+            </tr>
+        </thead>
+    </table>
+</body>
+
+</html>
+
+<!-- source https://gist.github.com/asgs/62fe3cda241c0ed0cfd8a6bbf7950028 -->
